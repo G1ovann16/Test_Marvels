@@ -1,22 +1,30 @@
 import React, {useState, useEffect, useReducer} from "react";
 import { connect } from "react-redux";
-import { heroe } from "../../redux/actions";
+import { heroe, comic, stories } from "../../redux/actions";
 const Home = (props) => {
-    const descriptions = '';
-    const stories = '';
 
 const [hero, setHero]=useState('')
 
 useEffect(() => {
     heroe();
+    comic();
+    stories();
     
 }, []);
     return (
-        <div className="Home">
-            <p>
-                {props.hero?.name} 
-                {/* <img src={image.path+'.'+image.extension}/> */}
+        <div className="Home container-fluid">
+            <div className="col">
+                <div className="row">
+                {props.hero?.name}
                 {props.hero?.description}
+
+                </div> 
+                <div className="row">
+                <img src={props.hero?.thumbnail?.path+'.'+props.hero?.thumbnail?.extension}/>
+                
+                </div>   
+            </div>
+                <p>
             </p>
         </div>
     );
