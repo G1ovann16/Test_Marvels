@@ -1,37 +1,19 @@
-
 import axios from "axios";
-import { API_URL } from "../../api-config";
+import {  BASE_URL, CHARACTER_ROUTE } from "../../api-config";
 import store from "./store";
+// export const HERO = 'hero';
 
-import { createActions } from "redux-actions";
-
-export const HERO = 'hero';
-
-export const hero = async()=>{
-    console.log('platano')
-    try {
-        const result = await  axios.get(API_URL) 
-        const action = createActions((HERO) =>{
-
-            return store.dispatch(action(result.data));
-        })
-        
-    } catch (error) {
-        console.log(error)
-    }
-} 
-
-// export const hero = async() => {
-//     console.log('platano')
-//   try {
-//       const res = await axios.get(API_URL)
-//       store.dispatch({ 
-//           type: HERO,
-//           payload: res.data
-//         });
-//         console.log(res.data)
-//   } catch (error) {
-//       console.log(error)
-      
-//   }
-// }
+export const heroe = async () =>{
+   await axios.get(BASE_URL + CHARACTER_ROUTE)
+  .then(
+    res=>{
+        console.log(res.data.data.results[0],
+            res.data.data.results[0].thumbnail,
+            res.data.data.results[0].thumbnail.path
+            )
+            store.dispatch({ 
+                type: 'HERO',
+                payload: res.data.data.results[0]
+            });
+    }  
+  )}
