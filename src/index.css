@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap');
+
+h1, h3, h6 {
+    color: white;
+}
+
+h6 span {
+    color: #1A4CC3;
+}
+
+.subtitle {
+    margin-top: 50px;
+}
+
+p {
+    color: white;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+    background-color: black;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #AA1428 !important;
+    font-weight: 700;
+}
+
+.bg-image {
+    width: 100%;
+    height: 60vh;
+    background-image: url('./pages/images/bg.jpg');
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
