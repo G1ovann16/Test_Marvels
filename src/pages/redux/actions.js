@@ -20,11 +20,11 @@ export const heroe = async () =>{
     await axios.get(BASE_URL + COMIC_ROUTE)
    .then(
      res=>{
-         console.log(res.data
+         console.log(res.data.data.results
              )
              store.dispatch({ 
                  type: 'COMIC',
-                 payload: res.data.data.results[0]
+                 payload: res.data.data.results
              });
      }  
    )}
@@ -33,11 +33,11 @@ export const heroe = async () =>{
     await axios.get(BASE_URL + STORIES_ROUTE)
    .then(
      res=>{
-         console.log(res.data
+         console.log(res.data.data.results
              )
              store.dispatch({ 
                  type: 'STORIES',
-                 payload: res.data.data.results[0]
+                 payload: res.data.data.results
              });
      }  
    )}

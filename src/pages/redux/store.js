@@ -1,4 +1,4 @@
-import hero from "./hero";
+import hero from "./reducers/hero";
 import { createStore, compose} from "redux";
 
 const composeEnhancers =

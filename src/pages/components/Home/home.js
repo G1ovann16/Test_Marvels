@@ -17,7 +17,6 @@ useEffect(() => {
                 <div className="row">
                 {props.hero?.name}
                 {props.hero?.description}
-
                 </div> 
                 <div className="row">
                 <img src={props.hero?.thumbnail?.path+'.'+props.hero?.thumbnail?.extension}/>
@@ -31,7 +30,7 @@ useEffect(() => {
   }
   
  
-const mapsStateToProps = (state) =>({hero: state.hero})
+const mapsStateToProps = (state) =>({hero: state.hero, stories: state.stories, comic: state.comic})
 
 export default connect(mapsStateToProps)(Home);
 
