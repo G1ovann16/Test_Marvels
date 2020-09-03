@@ -13,14 +13,18 @@ const Comics = (props) => {
 
 
     return (
-    <Fragment>
+    <Fragment >
     {props.comic?.map(c=>(
-                <div className="col-3 p.5">
+              
+                <div className="col-3 col-sm-3 col-md-4 col-lg-4 col-xl-6 p.5 ">
                 <h6  className="mt-8">
-                     {c.title} 
-                </h6>
-                <img className="mt-4" src={c.thumbnail?.path+'.'+c?.thumbnail?.extension} alt="" width="100%"/>
+                        {c.title} 
+                    </h6>
+                    <img className=" p.5" src={c.thumbnail?.path+'.'+c?.thumbnail?.extension} alt="" width="100%"/>
+              
                 </div>
+         
+       
       ))}    
     </Fragment>    
 )}

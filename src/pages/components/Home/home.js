@@ -32,8 +32,7 @@ const [hero, setHero]=useState('')
           <p className="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit dolore cupiditate vel ut quo alias.</p>
           <div className="row">
               <Hero/>
-        
-          </div>
+        </div>
         </div>
       </div>
       
