@@ -21,19 +21,19 @@ const Header = () => {
             <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Features</a>
+            <a className="nav-link" href="#">Comic</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Pricing</a>
+            <a className="nav-link" href="#">Stories</a>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
+              Skills Hero
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a className="dropdown-item" href="#">Action</a>
-              <a className="dropdown-item" href="#">Another action</a>
-              <a className="dropdown-item" href="#">Something else here</a>
+              <a className="dropdown-item" href="#">Leadership</a>
+              <a className="dropdown-item" href="#">Indomitable Will</a>
+              <a className="dropdown-item" href="#">Master martial artist</a>
             </div>
           </li>
         </ul>

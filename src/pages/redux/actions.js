@@ -4,7 +4,7 @@ import store from "./store";
 // export const HERO = 'hero';
 
 export const heroe = async () =>{
-   await axios.get(BASE_URL + CHARACTER_ROUTE)
+  await axios.get(BASE_URL + CHARACTER_ROUTE)
   .then(
     res=>{
         console.log(res.data.data.results[0]
@@ -16,9 +16,9 @@ export const heroe = async () =>{
     }  
   )}
 
-  export const comic = async () =>{
-    await axios.get(BASE_URL + COMIC_ROUTE)
-   .then(
+export const comic = async () =>{
+  await axios.get(BASE_URL + COMIC_ROUTE)
+  .then(
      res=>{
          console.log(res.data.data.results
              )
